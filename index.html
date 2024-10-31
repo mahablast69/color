@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmets Color Buttons</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            transition: background-color .5s;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mehmet's Color Buttons</h1>
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('orangered')">Orange</button>
+    <button onclick="changeColor('yellow')">Yellow</button>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <button onclick="changeColor('indigo')">Indigo</button>
+    <button onclick="changeColor('violet')">Violet</button>
+    <button onclick="resetColor()">Reset</button>
+
+
+    
+
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        function resetColor() {
+            document.body.style.backgroundColor = '';
+        }
+    </script>
+
+</body>
+</html>
